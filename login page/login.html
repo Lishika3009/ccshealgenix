@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <title>Responsive log in and sign up page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".login-form").hide();
+      $(".login").css("background", "none");
+      $(".login").click(function() {
+        $(".signup-form").hide();
+        $(".login-form").show();
+        $(".signup").css("background", "none");
+        $(".login").css("background", "#fff");
+      });
+      $(".signup").click(function() {
+        $(".login-form").hide();
+        $(".signup-form").show();
+        $(".signup").css("background", "#fff");
+        $(".login").css("background", "none");
+      });
+      $(".n2").click(function() {
+        $(".n1").val("");
+      });
+    });
+  </script>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            
+            <div class="nav-title">
+                <img src="/images/logo1.png" width="150" height="30" class="left-image"> </img>
+               
+              </div>
+        </div>
+        
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="three-d ">
+                Home
+                <span class="three-d-box active"><span class="front blink">Home</span><span class="back">Home</span></span>
+              </a>
+              <a href="/Rotaract2/index.html" class="three-d ">
+                Blogs
+                <span class="three-d-box"><span class="front">Blogs</span><span class="back">Blogs</span></span>
+              </a>
+              <a href="#" class="three-d ">
+                Team
+                <span class="three-d-box"><span class="front">Team</span><span class="back">Team</span></span>
+              </a>
+              <a href="#" class="three-d ">
+                About
+                <span class="three-d-box"><span class="front">About</span><span class="back">About</span></span>
+              </a>
+               <a href="/login page/login.html" class="three-d ">
+                Log In
+                <span class="three-d-box"><span class="front">Log In</span><span class="back">Log In</span></span>
+              </a>
+          
+        </div>
+      </div>
+
+
+
+  <div class="container">
+    <div class="signup">Sign up</div>
+
+    <div class="login">Log in</div>
+    <div class="signup-form">
+      <input type="text" placeholder="Enter your Email address" class="n1"><br>
+      <input type="text" placeholder="Enter your username" class="n1"><br>
+      <input type="password" placeholder="Enter your password" class="n1"><br>
+      <div class="n2">Create account</div>
+    </div>
+    <div class="login-form">
+      <input type="text" placeholder="Email or Username" class="n1"><br>
+      <input type="password" placeholder="Password" class="n1"><br>
+
+      <div class="n2">Log In</div><br>
+      <a href="#"> I forgot my username or password</a>
+
+    </div>
+     <!-- footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+            integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <section class="foot" ></section>
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+        <div class="nav-title">
+          <img class="logoss" src="/images/logo1.png" width="300" height="200"></img>
+         
+        </div>
+        <h3>HealGenix</h3>
+
+        <!-- <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          
+          <a href="#">Blog</a>
+        
+          <a href="#">Pricing</a>
+        
+          <a href="#">About</a>
+          
+          <a href="#">Faq</a>
+          
+          <a href="#">Contact</a>
+        </p> -->
+
+        <p class="footer-company-name"></p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Thapar Institute of Engineering and Technology</span> Patiala,India</p>
+        </div>
+
+        
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:healGenix@gmail.com" style="color: #fff;">healGenix@gmail.com</a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:HealGenix" style="color: #fff;">HealGenix</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about" style="color: #fff;">
+          <span>About</span>
+          HealGenix is a medical solutions firm offering futuristic and AI-driven products for hospitals, clinicis as well as individuals.
+        </p>
+
+        <div class="footer-icons">
+          
+          <a href="https://www.facebook.com/rotaractclubtiet/"><i class="fab fa-facebook-f"></i></a>
+          
+          <a href="https://www.linkedin.com/company/rotaract-club-tiet-patiala/mycompany/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/rotaractclubtiet/"><i class="fab fa-instagram"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+</body>
+</html>
